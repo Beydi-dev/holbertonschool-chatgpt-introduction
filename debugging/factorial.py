@@ -3,8 +3,10 @@ import sys
 
 def factorial(n):
     result = 1
-    for i in range(2, n + 1):
-        result *= i
+    while n > 1:
+        result *= n
+        n -= 1  # ← CORRECTION MINIMALE
     return result
 
-print(factorial(int(sys.argv[1])))
+f = factorial(int(sys.argv[1]))
+print(f)
