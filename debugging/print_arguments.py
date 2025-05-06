@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/bin/bash/python3
 import sys
 
 for i in range(1, len(sys.argv)):
